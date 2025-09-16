@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHub - शैक्षणिक प्लेटफॉर्म एग्रीगेटर</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>WORLDSHIFT LOOP</h1>
+                    <span>शैक्षणिक संसाधन केंद्र</span>
+                </div>
+                <nav class="nav" id="mainNav">
+                    <a href="#home" class="nav-link active" data-section="home">होम</a>
+                    <a href="#platforms" class="nav-link" data-section="platforms">प्लेटफॉर्म</a>
+                    <a href="#search" class="nav-link" data-section="search">खोज</a>
+                    <a href="#settings" class="nav-link" data-section="settings">सेटिंग्स</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="container">
+                <!-- Hero Section -->
+                <div class="hero">
+                    <h2>सभी शिक्षा प्लेटफॉर्म एक ही जगह</h2>
+                    <p>PW, Byju's, और Vedantu के सभी कोर्स और संसाधन एक ही प्लेटफॉर्म पर access करें</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">470+</span>
+                            <span class="stat-label">कुल कोर्सेज</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">103M+</span>
+                            <span class="stat-label">छात्र</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">विषय</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Platform Cards -->
+                <div class="platforms-grid">
+                    <div class="platform-card" data-platform="pw">
+                        <div class="platform-header">
+                            <div class="platform-logo pw-logo">PW</div>
+                            <div class="platform-info">
+                                <h3>Physics Wallah</h3>
+                                <p>JEE & NEET के लिए किफायती गुणवत्तापूर्ण शिक्षा</p>
+                            </div>
+                        </div>
+                        <div class="platform-stats">
+                            <div class="stat">
+                                <span class="stat-value">150</span>
+                                <span class="stat-name">कोर्सेज</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">2M+</span>
+                                <span class="stat-name">छात्र</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">8</span>
+                                <span class="stat-name">विषय</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--primary explore-btn" data-platform="pw">एक्सप्लोर करें</button>
+                    </div>
+
+                    <div class="platform-card" data-platform="byjus">
+                        <div class="platform-header">
+                            <div class="platform-logo byjus-logo">BYJU'S</div>
+                            <div class="platform-info">
+                                <h3>BYJU'S</h3>
+                                <p>इंटरैक्टिव कंटेंट के साथ व्यक्तिगत शिक्षा</p>
+                            </div>
+                        </div>
+                        <div class="platform-stats">
+                            <div class="stat">
+                                <span class="stat-value">200</span>
+                                <span class="stat-name">कोर्सेज</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">100M+</span>
+                                <span class="stat-name">छात्र</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">12</span>
+                                <span class="stat-name">विषय</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--primary explore-btn" data-platform="byjus">एक्सप्लोर करें</button>
+                    </div>
+
+                    <div class="platform-card" data-platform="vedantu">
+                        <div class="platform-header">
+                            <div class="platform-logo vedantu-logo">Vedantu</div>
+                            <div class="platform-info">
+                                <h3>Vedantu</h3>
+                                <p>विशेषज्ञ शिक्षकों के साथ लाइव ऑनलाइन ट्यूटरिंग</p>
+                            </div>
+                        </div>
+                        <div class="platform-stats">
+                            <div class="stat">
+                                <span class="stat-value">120</span>
+                                <span class="stat-name">कोर्सेज</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">1M+</span>
+                                <span class="stat-name">छात्र</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">10</span>
+                                <span class="stat-name">विषय</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--primary explore-btn" data-platform="vedantu">एक्सप्लोर करें</button>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="recent-activity">
+                    <h3>हाल की गतिविधि</h3>
+                    <div class="activity-list" id="activityList">
+                        <!-- Activities will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platforms Section -->
+        <section id="platforms" class="section">
+            <div class="container">
+                <div class="platforms-header">
+                    <h2>प्लेटफॉर्म कोर्सेज</h2>
+                    <div class="platform-selector">
+                        <button class="platform-tab active" data-platform="pw">Physics Wallah</button>
+                        <button class="platform-tab" data-platform="byjus">BYJU'S</button>
+                        <button class="platform-tab" data-platform="vedantu">Vedantu</button>
+                    </div>
+                </div>
+
+                <!-- Filters -->
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="categoryFilter">श्रेणी:</label>
+                        <select id="categoryFilter" class="form-control">
+                            <option value="">सभी श्रेणियां</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="subjectFilter">विषय:</label>
+                        <select id="subjectFilter" class="form-control">
+                            <option value="">सभी विषय</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="contentTypeFilter">कंटेंट प्रकार:</label>
+                        <select id="contentTypeFilter" class="form-control">
+                            <option value="">सभी प्रकार</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Courses Grid -->
+                <div class="courses-grid" id="coursesGrid">
+                    <!-- Courses will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section id="search" class="section">
+            <div class="container">
+                <h2>संसाधन खोजें</h2>
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="कोर्स, विषय या शिक्षक खोजें..." class="form-control">
+                        <button class="btn btn--primary" id="searchBtn">खोजें</button>
+                    </div>
+                    <div class="advanced-filters">
+                        <h4>उन्नत फिल्टर</h4>
+                        <div class="filter-row">
+                            <div class="filter-group">
+                                <label>प्लेटफॉर्म:</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" value="pw" checked> Physics Wallah</label>
+                                    <label><input type="checkbox" value="byjus" checked> BYJU'S</label>
+                                    <label><input type="checkbox" value="vedantu" checked> Vedantu</label>
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <label for="searchSortBy">क्रमबद्ध करें:</label>
+                                <select id="searchSortBy" class="form-control">
+                                    <option value="relevance">प्रासंगिकता</option>
+                                    <option value="rating">रेटिंग</option>
+                                    <option value="students">छात्र संख्या</option>
+                                    <option value="duration">अवधि</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-results" id="searchResults">
+                    <!-- Search results will be populated here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings" class="section">
+            <div class="container">
+                <h2>सेटिंग्स और कस्टमाइज़ेशन</h2>
+                <div class="settings-grid">
+                    <!-- User Preferences -->
+                    <div class="settings-card">
+                        <h3>उपयोगकर्ता प्राथमिकताएं</h3>
+                        <div class="form-group">
+                            <label>पसंदीदा प्लेटफॉर्म:</label>
+                            <div class="checkbox-group" id="platformPrefs">
+                                <label><input type="checkbox" value="pw" checked> Physics Wallah</label>
+                                <label><input type="checkbox" value="byjus" checked> BYJU'S</label>
+                                <label><input type="checkbox" value="vedantu" checked> Vedantu</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>पसंदीदा विषय:</label>
+                            <div class="checkbox-group" id="subjectPrefs">
+                                <label><input type="checkbox" value="Physics" checked> भौतिक विज्ञान</label>
+                                <label><input type="checkbox" value="Chemistry"> रसायन विज्ञान</label>
+                                <label><input type="checkbox" value="Mathematics" checked> गणित</label>
+                                <label><input type="checkbox" value="Biology"> जीव विज्ञान</label>
+                            </div>
+                        </div>
+                        <button class="btn btn--primary" id="savePreferences">प्राथमिकताएं सेव करें</button>
+                    </div>
+
+                    <!-- API Integration -->
+                    <div class="settings-card">
+                        <h3>API Integration</h3>
+                        <div class="form-group">
+                            <label for="pwApiKey">Physics Wallah API Key:</label>
+                            <input type="password" id="pwApiKey" class="form-control" placeholder="API Key डालें">
+                            <div class="connection-status">
+                                <span class="status status--success">जुड़ा हुआ</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="byjusApiKey">BYJU'S API Key:</label>
+                            <input type="password" id="byjusApiKey" class="form-control" placeholder="API Key डालें">
+                            <div class="connection-status">
+                                <span class="status status--warning">कनेक्शन की जांच करें</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="vedantuApiKey">Vedantu API Key:</label>
+                            <input type="password" id="vedantuApiKey" class="form-control" placeholder="API Key डालें">
+                            <div class="connection-status">
+                                <span class="status status--error">कनेक्ट नहीं है</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--primary" id="testConnections">कनेक्शन टेस्ट करें</button>
+                    </div>
+
+                    <!-- Dashboard Layout -->
+                    <div class="settings-card">
+                        <h3>डैशबोर्ड लेआउट</h3>
+                        <div class="form-group">
+                            <label>लेआउट स्टाइल:</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="layout" value="grid" checked> ग्रिड व्यू</label>
+                                <label><input type="radio" name="layout" value="list"> लिस्ट व्यू</label>
+                                <label><input type="radio" name="layout" value="compact"> कॉम्पैक्ट व्यू</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardsPerRow">प्रति पंक्ति कार्ड:</label>
+                            <select id="cardsPerRow" class="form-control">
+                                <option value="2">2</option>
+                                <option value="3" selected>3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <button class="btn btn--primary" id="saveLayout">लेआउट सेव करें</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Resource Modal -->
+    <div id="resourceModal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="resource-content">
+                <div class="resource-header">
+                    <h2 id="resourceTitle"></h2>
+                    <div class="resource-meta">
+                        <span id="resourceInstructor"></span>
+                        <span id="resourceDuration"></span>
+                        <span id="resourceLevel"></span>
+                    </div>
+                </div>
+                <div class="resource-video">
+                    <div class="video-placeholder">
+                        <div class="play-button">▶</div>
+                        <p>वीडियो प्लेयर (डेमो)</p>
+                    </div>
+                </div>
+                <div class="resource-details">
+                    <p id="resourceDescription"></p>
+                    <div class="resource-actions">
+                        <button class="btn btn--primary bookmark-btn">बुकमार्क करें</button>
+                        <button class="btn btn--secondary share-btn">शेयर करें</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div class="loading hidden" id="loadingIndicator">
+        <div class="loading-spinner"></div>
+        <p>लोड हो रहा है...</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
